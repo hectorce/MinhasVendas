@@ -20,12 +20,20 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Painel de Vendas", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Cadastros", "About", "Home")</li>
-                    <li>@Html.ActionLink("Pedidos", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Vendas", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Relatorios", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Configuração", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Painel de Vendas", "Index", "PainelDeVendas")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Clientes", "index", "Cliente")@*<a href="#">cliente</a>*@</li>
+                            <li>@Html.ActionLink("Fornecedores", "index", "Fornecedor")@*<a href="#">Fornecedor</a>*@</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Pedidos", "index", "Pedido")</li>
+                            <li>@Html.ActionLink("Vendas", "index", "Venda")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Relatorios", "index", "Relatorio")</li>
+                    <li>@Html.ActionLink("Configuração", "index", "Configurar")</li>
+                    <li>@Html.ActionLink("Sobre", "index", "Sobre")</li>
                 </ul>
             </div>
         </div>
