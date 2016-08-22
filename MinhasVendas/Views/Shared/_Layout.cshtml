@@ -24,11 +24,24 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Clientes", "index", "Cliente")@*<a href="#">cliente</a>*@</li>
-                            <li>@Html.ActionLink("Fornecedores", "index", "Fornecedor")@*<a href="#">Fornecedor</a>*@</li>
+                            <li>@Html.ActionLink("Clientes", "index", "Cliente")</li>
+                            <li>@Html.ActionLink("Fornecedores", "index", "Fornecedor")</li>
+                            <li>@Html.ActionLink("Produtos", "index", "Produto")</li>
                             <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Tipo de Produtos","index","TipoProduto")</li>
+                            <li>@Html.ActionLink("Tipo de Pagamentos","index","TipoPagamento")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movimentações <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
                             <li>@Html.ActionLink("Pedidos", "index", "Pedido")</li>
                             <li>@Html.ActionLink("Vendas", "index", "Venda")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Baixas", "index", "Baixa")</li>
+                            <li role="separator" class="divider"></li>
+                            <li>@Html.ActionLink("Contas a Pagar", "index", "ContaPagar")</li>
+                            <li>@Html.ActionLink("Contas a Receber", "index", "ContaReceber")</li>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Relatorios", "index", "Relatorio")</li>
