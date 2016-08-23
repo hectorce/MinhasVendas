@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-using MinhasVendas.Models;
+﻿using MinhasVendas.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
-namespace MinhasVendas.DAL
+namespace MinhasVendas
 {
     public class VendasContext : DbContext
     {
